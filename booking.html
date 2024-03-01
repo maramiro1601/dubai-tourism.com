@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ticket Booking</title>
+    <link rel="stylesheet" href="css/style56.css">
+</head>
+<body>
+    <header>
+        <h1> Ticket Booking</h1>
+    </header>
+    <main>
+        
+		<form id="booking-form" action="submit.php" method="POST">
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+			<div class="form-group">
+    <label for="destination">Destination:</label>
+    <select id="destination" name="destination" required>
+        <option value="Atlantis">Atlantis</option>
+        <option value="Burj Khalifa">Burj Khalifa</option>
+        <option value="Burj Al Arab">Burj Al Arab</option>
+        <option value="Dubai Frame">Dubai Frame</option>
+        <option value="IMG">IMG Worlds of Adventure</option>
+        <option value="Desert">Desert Safari</option>
+        <option value="Museum of the Future">Museum of the Future</option>
+        <option value="Dubai Mall">Dubai Mall</option>
+    </select>
+</div>
+
+            <div class="form-group">
+                <label for="date">Visit Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="tickets">Number of Tickets:</label>
+                <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+            </div>
+            <button type="submit">Book Tickets</button>
+        </form>
+    </main>
+    <script src="js/script1.js"></script>
+</body>
+</html>

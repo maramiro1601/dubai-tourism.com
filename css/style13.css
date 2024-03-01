@@ -1,0 +1,42 @@
+*{
+	
+	    
+	
+}
+.video{
+	background-image:url("../images/dubai1.jpg"), linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.35));
+	
+	width:100%;
+	height:100vh;
+	
+	background-size:cover;
+	background-position:relative;	
+	
+}
+.vid{
+	position:absolute;
+    left:290px;
+	top:100px;
+
+}
+
+button{
+	width:150px;
+	padding:10px 30 ;
+	text-align: center ;
+	margin :0px 100 px;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid black;
+	background-color:#fff;
+    cursor: pointer;
+	position:relative;
+	overflow:hidden;
+	
+}
+	
+	
+
+ button  a{
+	color:#000;
+}

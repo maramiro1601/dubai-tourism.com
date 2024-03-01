@@ -1,0 +1,122 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.content {
+    text-align: center;
+    margin-bottom: 50px; /* Adjust the margin as needed */
+}
+
+.content h1 {
+    color: white; /* Set the text color */
+	font-size:50px;
+}
+
+.content button {
+    background-color: #009688; /* Adjust the button color as needed */
+    color: white; /* Set the button text color */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    border: none;
+    cursor: pointer;
+}
+
+.content button a {
+    color: white; /* Set the link color inside the button */
+    text-decoration: none;
+}
+button a{
+	color:white;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.25); /* Adjust the transparency as needed */
+    padding: 10px 2px; /* Adjust the padding as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 60px; /* Adjust the height as needed */
+    width: auto; /* Maintain the aspect ratio */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    margin-right: 20px; /* Adjust the spacing between links as needed */
+}
+
+ul li a {
+    color: white; /* Set the link color */
+    text-decoration: none;
+    font-size: 16px; /* Adjust the font size as needed */
+}
+.navbar a, .content button {
+    transition: all 0.3s ease; /* Adjust the duration and easing function as needed */
+}
+
+.navbar a:hover, .content button:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+.content button {
+    position: relative; /* Needed for the span positioning */
+    overflow: hidden; /* Ensures the span doesn't overflow the button */
+}
+
+.content button span {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the color and opacity as needed */
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.content button:hover span {
+    left: 100%;
+}
+
+.content button a {
+    position: relative;
+    z-index: 1; /* Ensures the link is above the span */
+}
+.navbar ul li a {
+    transition: all 0.3s ease; /* Adjust the duration and easing function as needed */
+}
+
+.navbar ul li a:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    color: #f0ad4e; /* Adjust the hover color as needed */
+}
